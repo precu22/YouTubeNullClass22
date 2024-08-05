@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 
 // Define routes
 app.use('/api/user', userRoutes);
-app.use('/api/video', videoRoutes);
+app.use('/api', videoRoutes);
 app.use('/api/comment', commentsRoutes);
 
 // 404 handler for undefined routes
